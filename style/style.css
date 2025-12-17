@@ -71,7 +71,7 @@ body {
     background-color: #f59e0b;
 }
 
-/* ------Logo-------- */
+/* ------Logo----(-MoRa-)---- */
 .logo-group {
     display: flex;
     align-items: center;
@@ -105,7 +105,7 @@ body {
 /* -------------------------------------------- */
 
 
-/* ------------------Footer-------------------- */
+/* ------------------Footer------(-MoRa-)-------------- */
 footer {
     text-align: center;
     color: rgba(255, 255, 255, 0.7);
@@ -291,8 +291,7 @@ div.ul2 li {
   font-size: 0.8rem;
   margin-left: 4%;
 }
-
-
+/* -----------------social-buttons--------------- */
 .social {
   display: flex;
   justify-content: center;
@@ -310,8 +309,9 @@ div.ul2 li {
 .apple:hover, .git:hover {
   border: 1.5px solid transparent;
 }
+/* --------------------------------------------------- */
 
-/* ---------------------------Body-(Menu)-------------------- */
+/* ---------------------------Body-(Menu)----(-MoRa-)---------------- */
 /* Menu caption */
 .menu-cap {
     text-align: center;
@@ -452,6 +452,7 @@ div.ul2 li {
     cursor: pointer;
 }
 /* -------------------End of menu----------------------- */
+
 
 /*-----------------LOGIN-and-SignUp----------------*/
 .container1 {
