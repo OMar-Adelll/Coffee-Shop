@@ -2,8 +2,7 @@
 body {
     background-color: #1c1917;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /*For eazy calcultation(width)*/
     color: rgba(255, 255, 255, 0.815);
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -13,8 +12,6 @@ body {
     background-color: #1c1917;
     font-size: 13px;
     font-weight: bold;
-    margin: 0;
-    padding: 0;
     position: sticky;
     top: 0;
     z-index: 4;
@@ -74,23 +71,14 @@ body {
 /* ------Logo----(-MoRa-)---- */
 .logo-group {
     display: flex;
-    align-items: center;
-    gap: 0px;
+    align-items: center;  /*to make the photo and the cap on on line*/
 }
 
 .top img.logo {
     width: 55px;
-    display: block;
-    object-fit: cover;
-    margin-right: 0;
-
 }
 
 .logo-cap {
-    color: rgb(255, 255, 255);
-    display: block;
-    margin-left: 0px;
-    padding: 0px;
     font-family: 'Pacifico', cursive;
     font-size: 15px;
     color: #8b6353;
@@ -98,7 +86,6 @@ body {
 
 .top img.logo:hover,
 .logo-cap:hover {
-    background-color: transparent;
     filter: brightness(1.4);
 }
 
@@ -111,27 +98,23 @@ footer {
     color: rgba(255, 255, 255, 0.7);
     font-size: small;
     margin: 20px auto;
-    width: 100%;
     border-top: solid 2px rgba(87, 83, 83, 0.767);
 }
 
 footer p {
     text-align: center;
     margin: 20px auto;
-    margin-left:34px;
     padding: 20px auto;
-    background-color: transparent;
 }
 
 /* ---------------section1(home)----------------------------- */
 .sec1-down{
     height: 100vh;          /* Full screen height */
     width: 100%;
-    background: url('/media/backgroundd2.jpg') center/cover no-repeat;
+    background: url('../media/backgroundd2.jpg') center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 .center{
     text-align: center;
@@ -160,24 +143,12 @@ footer p {
   background-color: transparent;
   border-radius: 20px;
   padding: 10px;
-  min-width: 100px;
+  width: 100px;
   margin-top: 1rem;
   border: 1.4px solid rgba(255, 255, 255, 0.5);
   color: antiquewhite;
   cursor: pointer;
  
-}
-.bttn1 {
-    margin-right: 30px;
-    width: 100px;
-    color: antiquewhite;
-    margin-left: 4%;
-
-}
-.bttn2 {
-    margin-right: 30px;
-    width: 100px;
-    color: antiquewhite;
 }
 
 .bttns {
@@ -215,7 +186,6 @@ footer p {
 
 div.p2 {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: center;
 }
 
@@ -303,11 +273,11 @@ div.ul2 li {
   border: none;
   width: 30px;
   cursor: pointer;
-  transition: border 0.3s ease;
 }
 
 .apple:hover, .git:hover {
-  border: 1.5px solid transparent;
+  background-color: #37585680;
+  border-radius: 5px;
 }
 /* --------------------------------------------------- */
 
@@ -315,8 +285,7 @@ div.ul2 li {
 /* Menu caption */
 .menu-cap {
     text-align: center;
-    margin: 10px auto 30px;
-    margin-top: 50px;
+    margin: 50px auto 30px;
 }
 
 .menu-cap1 {
@@ -334,25 +303,23 @@ div.ul2 li {
 
 /* Menu navbar */
 .menu-nav {
+    display: flex;
     width: 70%;
     margin: 0 auto;
-    padding: 5px;
+    padding: 5px 0;
+    gap: 15%;
     border: 1px solid rgba(150, 145, 138, 0.747);
     border-radius: 20px;
-    text-align: center;
-    justify-content: space-between;
     justify-content: center;
 }
 
 .menu-nav a {
-    display: inline-block;
     padding: 6px;
     text-decoration: none;
     border: 1px solid white;
     border-radius: 15px;
     font-size: 13px;
     font-weight: bold;
-    margin: 0 7%;
     color: rgba(255, 255, 255, 0.815);
     font-size: 15px;
 }
@@ -374,24 +341,21 @@ div.ul2 li {
 
 /* Products */
 .sec-cap {
-    background-color: transparent;
     text-align: left;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     margin-top: 30px;
     margin-left: 10px;
     font-family:cursive;
 }
 /* --------products sections------- */
 .menu-page section {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     width: 94%;
-    height: 90%;
     background-color: rgba(26, 20, 20, 0.788);
     border-radius: 15px;
     padding: 15px;
     margin: 15px auto;
-    display: flex;
-    justify-content: center;
     gap: 15px 2%;
     flex-wrap: wrap;
 }
@@ -404,7 +368,6 @@ div.ul2 li {
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease;
-    flex-direction: column;
 }
 .product-card:hover{
     transform: translateY(-10px);
@@ -423,9 +386,6 @@ div.ul2 li {
     color: rgba(240, 217, 179, 0.808);
     font-size: 13px;
     font-family: 'Poppins', sans-serif;
-}
-.sec-cap{
-    margin-bottom: 25px;
 }
 #sec-cap1{
     margin-top: 10px;
@@ -482,8 +442,7 @@ div.ul2 li {
     display:block;
     color: rgba(236, 235, 235, 0.897);
     margin-bottom:10px;
-    margin-right:600px;
-
+    text-align: left;
 }
 /*Input fields*/
 .container1 input {
@@ -518,7 +477,7 @@ div.ul2 li {
   cursor: pointer;
 }
 .signin-link {
-  color:#ffaaaa;
+  color:#FFA500;
   margin-top: 10px;
   display: inline-block; 
   text-decoration: none;
@@ -530,3 +489,4 @@ div.ul2 li {
 /* ------------------------Finsh----------------------- */
 
 
+=
